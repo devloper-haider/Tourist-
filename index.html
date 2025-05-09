@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust - Discover Amazing Destinations</title>
+    <meta name="description" content="Explore the world's most beautiful destinations with Wanderlust Travel" />
+    <meta name="author" content="Wanderlust Travel" />
+
+    <meta property="og:title" content="Wanderlust Travel" />
+    <meta property="og:description" content="Discover Amazing Travel Destinations" />
+    <meta property="og:type" content="website" />
+    
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+
+  <body class="font-poppins">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="navbar fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="navbar-container max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center py-4">
+          <a href="#" class="logo text-2xl font-montserrat font-bold text-white">Wanderlust</a>
+          <div class="nav-links" id="navLinks">
+            <ul class="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-8">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#destinations" class="nav-link">Destinations</a></li>
+              <li><a href="#tours" class="nav-link">Tours</a></li>
+              <li><a href="#gallery" class="nav-link">Gallery</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-button" id="menuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section relative h-screen flex items-center justify-center overflow-hidden">
+          <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');"></div>
+          <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+          <div class="container relative z-20 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">Explore The World</h1>
+            <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 animate-fade-in delay-300">
+              Discover breathtaking destinations and create unforgettable memories with our curated travel experiences.
+            </p>
+            <div class="hero-buttons flex flex-col md:flex-row justify-center gap-4 animate-fade-in delay-500">
+              <a href="#destinations" class="btn btn-primary">Discover Destinations</a>
+              <a href="#contact" class="btn btn-outline">Plan Your Trip</a>
+            </div>
+          </div>
+          <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#destinations" class="scroll-down">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- Featured Destinations Section -->
+        <section id="destinations" class="section bg-gray-50 py-20">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+              <span class="section-subtitle inline-block">Explore</span>
+              <h2 class="section-title">Featured Destinations</h2>
+              <p class="section-description max-w-3xl mx-auto">
+                From exotic beaches to majestic mountains, discover our handpicked destinations
+                that offer extraordinary experiences for every type of traveler.
+              </p>
+            </div>
+            
+            <div class="destinations-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Destination 1 -->
+              <div class="destination-card">
+                <div class="destination-image">
+                  <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1086&q=80" alt="Italy" />
+                  <div class="destination-overlay">
+                    <a href="#" class="btn btn-sm btn-primary">Explore</a>
+                  </div>
+                </div>
+                <div class="destination-content">
+                  <h3>Amalfi Coast, Italy</h3>
+                  <div class="flex items-center mb-2">
+                    <span class="text-yellow-400 mr-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    </span>
+                    <span class="text-gray-700">4.8 (120 reviews)</span>
+                  </div>
+                  <p class="text-gray-600">Experience the stunning cliffside villages and azure waters of Italy's most picturesque coastline.</p>
+                </div>
+              </div>
+              
+              <!-- Destination 2 -->
+              <div class="destination-card">
+                <div class="destination-image">
+                  <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Bali" />
+                  <div class="destination-overlay">
+                    <a href="#" class="btn btn-sm btn-primary">Explore</a>
+                  </div>
+                </div>
+                <div class="destination-content">
+                  <h3>Ubud, Bali</h3>
+                  <div class="flex items-center mb-2">
+                    <span class="text-yellow-400 mr-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    </span>
+                    <span class="text-gray-700">4.9 (215 reviews)</span>
+                  </div>
+                  <p class="text-gray-600">Immerse yourself in Bali's cultural heart with lush rice terraces, ancient temples, and wellness retreats.</p>
+                </div>
+              </div>
+              
+              <!-- Destination 3 -->
+              <div class="destination-card">
+                <div class="destination-image">
+                  <img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="Japan" />
+                  <div class="destination-overlay">
+                    <a href="#" class="btn btn-sm btn-primary">Explore</a>
+                  </div>
+                </div>
+                <div class="destination-content">
+                  <h3>Kyoto, Japan</h3>
+                  <div class="flex items-center mb-2">
+                    <span class="text-yellow-400 mr-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    </span>
+                    <span class="text-gray-700">4.7 (180 reviews)</span>
+                  </div>
+                  <p class="text-gray-600">Discover traditional Japanese culture with ancient temples, serene gardens, and authentic experiences.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text-center mt-12">
+              <a href="#" class="btn btn-outline-secondary">View All Destinations</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tours Section -->
+        <section id="tours" class="section bg-gradient py-20">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+              <span class="section-subtitle inline-block text-white">Popular</span>
+              <h2 class="section-title text-white">Our Best Tours</h2>
+              <p class="section-description max-w-3xl mx-auto text-gray-100">
+                Choose from our most popular tours, carefully crafted to provide unforgettable experiences 
+                with expert guides, comfortable accommodations, and authentic cultural interactions.
+              </p>
+            </div>
+            
+            <div class="tours-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Tour 1 -->
+              <div class="tour-card">
+                <div class="tour-header">
+                  <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="European Adventure" />
+                  <div class="tour-badge">
+                    <span>Bestseller</span>
+                  </div>
+                </div>
+                <div class="tour-content">
+                  <div class="tour-meta">
+                    <span>10 Days</span>
+                    <span>Group Tour</span>
+                    <span>5-star</span>
+                  </div>
+                  <h3 class="tour-title">European Adventure: 5 Countries</h3>
+                  <p class="tour-description">Explore the best of Western Europe on this 10-day adventure through France, Switzerland, Italy, Germany, and Netherlands.</p>
+                  <div class="tour-footer">
+                    <div class="tour-price">
+                      <span class="old-price">$3,499</span>
+                      <span class="current-price">$2,999</span>
+                      <span class="per-person">per person</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Tour 2 -->
+              <div class="tour-card">
+                <div class="tour-header">
+                  <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" alt="Paris Explorer" />
+                  <div class="tour-badge">
+                    <span>New</span>
+                  </div>
+                </div>
+                <div class="tour-content">
+                  <div class="tour-meta">
+                    <span>7 Days</span>
+                    <span>Private Tour</span>
+                    <span>4-star</span>
+                  </div>
+                  <h3 class="tour-title">Enchanting Thailand Adventure</h3>
+                  <p class="tour-description">Discover the magic of Thailand with visits to Bangkok's temples, Chiang Mai's elephants, and Phuket's beaches.</p>
+                  <div class="tour-footer">
+                    <div class="tour-price">
+                      <span class="old-price">$1,999</span>
+                      <span class="current-price">$1,699</span>
+                      <span class="per-person">per person</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text-center mt-12">
+              <a href="#" class="btn btn-light">Browse All Tours</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section py-20">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+              <span class="section-subtitle inline-block">Inspiration</span>
+              <h2 class="section-title">Travel Gallery</h2>
+              <p class="section-description max-w-3xl mx-auto">
+                Get inspired by stunning photos from our travelers around the world. 
+                These magical moments could be yours on your next adventure.
+              </p>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+              <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Gallery Image 1" />
+              </div>
+              <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Gallery Image 2" />
+              </div>
+              <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Gallery Image 3" />
+              </div>
+              <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" alt="Gallery Image 4" />
+              </div>
+              <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Gallery Image 5" />
+              </div>
+              <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1502085026272-31ea04ffe01f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Gallery Image 6" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section bg-gray-50 py-20">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+              <span class="section-subtitle inline-block">Testimonials</span>
+              <h2 class="section-title">What Our Travelers Say</h2>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonials">
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <div class="testimonial-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <p class="testimonial-text">"The European tour exceeded all my expectations. The guides were knowledgeable, accommodations were superb, and the itinerary perfectly balanced iconic sights with hidden gems."</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson" class="author-image" />
+                    <div>
+                      <h4 class="author-name">Sarah Johnson</h4>
+                      <p class="author-trip">European Adventure Tour</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="testimonial-item active">
+                <div class="testimonial-content">
+                  <div class="testimonial-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <p class="testimonial-text">"Our family trip to Thailand was absolutely perfect thanks to Wanderlust. The experiences were authentic, the guides attentive, and the memories will last a lifetime."</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-image" />
+                    <div>
+                      <h4 class="author-name">Michael Chen</h4>
+                      <p class="author-trip">Thailand Family Adventure</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <div class="testimonial-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <p class="testimonial-text">"I've traveled with many companies, but Wanderlust truly stands out. Their attention to detail, sustainable practices, and ability to create magical moments made my Japan trip unforgettable."</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Emma Rodriguez" class="author-image" />
+                    <div>
+                      <h4 class="author-name">Emma Rodriguez</h4>
+                      <p class="author-trip">Japan Cultural Experience</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="testimonial-controls">
+                <button id="prevTestimonial" class="testimonial-arrow prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div class="testimonial-dots" id="testimonialDots">
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                </div>
+                <button id="nextTestimonial" class="testimonial-arrow next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section py-20">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+              <span class="section-subtitle inline-block">Get In Touch</span>
+              <h2 class="section-title">Plan Your Adventure</h2>
+              <p class="section-description max-w-3xl mx-auto">
+                Ready to start your journey? Fill out the form below and our travel experts 
+                will help you plan the perfect trip tailored to your preferences.
+              </p>
+            </div>
+            
+            <div class="contact-container grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div class="contact-info">
+                <div class="info-card mb-8">
+                  <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Our Location</h4>
+                    <p>Johar Town, Lahore</p>
+                  </div>
+                </div>
+                
+                <div class="info-card mb-8">
+                  <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Email Us</h4>
+                    <p>haidermehmood569@gmail.com</p>
+                  </div>
+                </div>
+                
+                <div class="info-card">
+                  <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Call Us</h4>
+                    <p>+923 219966427</p>
+                  </div>
+                </div>
+                
+                <div class="social-links mt-12">
+                  <h4>Follow Us</h4>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="#" class="social-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                      </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                      </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                  </div>
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                      <label for="destination">Destination</label>
+                      <select id="destination" name="destination">
+                        <option value="">Select Destination</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="northamerica">North America</option>
+                        <option value="southamerica">South America</option>
+                        <option value="australia">Australia & Pacific</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Your Travel Plans</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+          <div class="container mx-auto px-4">
+            <div class="newsletter-container">
+              <div class="newsletter-content">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get travel inspiration, featured trips, and more in your inbox</p>
+              </div>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-light">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container mx-auto px-4">
+          <div class="footer-container">
+            <div class="footer-about">
+              <div class="footer-logo">Wanderlust</div>
+              <p>Curating unforgettable travel experiences for the adventurous and curious since 2010.</p>
+              <div class="footer-social">
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <div class="footer-links">
+              <div class="footer-link-group">
+                <h4>Destinations</h4>
+                <ul>
+                  <li><a href="#">Europe</a></li>
+                  <li><a href="#">Asia</a></li>
+                  <li><a href="#">Africa</a></li>
+                  <li><a href="#">North America</a></li>
+                  <li><a href="#">South America</a></li>
+                  <li><a href="#">Australia & Pacific</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-link-group">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Travel Guides</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-link-group">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Travel Insurance</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p class="copyright">© 2025 Wanderlust Travel. All Rights Reserved.</p>
+            <div class="payment-methods">
+              <span>We Accept:</span>
+              <img src="https://cdn-icons-png.flaticon.com/128/349/349221.png" alt="Visa" width="40" height="25">
+              <img src="https://cdn-icons-png.flaticon.com/128/349/349228.png" alt="MasterCard" width="40" height="25">
+              <img src="https://cdn-icons-png.flaticon.com/128/349/349230.png" alt="American Express" width="40" height="25">
+              <img src="https://cdn-icons-png.flaticon.com/128/349/349216.png" alt="PayPal" width="40" height="25">
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
